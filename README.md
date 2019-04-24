@@ -4,18 +4,20 @@
 
 ## 简介
 
-当我们使用`nvm`管理`node`时，切换`node`版本时，安装在全局的`npm`包无法共用之前`node`版本中安装在全局的`npm`包，这时会让人很头痛，需要重新下载所有的全局模块。也许你可能这么做：
+当我们使用`nvm`管理`node`，切换`node`版本时，安装在全局的`npm`包无法共用之前`node`版本中的`npm`包，需要重新下载所有的全局模块，这很蛋疼。也许你可能这么做：
 
 - 添加`npm`配置，设置共用的`prefix`（执行`npm config set prefix "***"`）
 
-但是，这样是不行的，会提示nvm与npm配置`prefix`不兼容，
+但是，这样是行不通的，会提示nvm与npm配置`prefix`不兼容，
 
 ```
 nvm is not compatible with the npm config "prefix" option...
 ```
 
+让执行`nvm use --delete-prefix ***` or `npm config delete prefix`才可以，这两句的意思是删掉你设置的`npm`配置。
+
 > Q：难道没有其他办法了吗？ 
-> A：是的，就连`nvm`官方都没有办法  
+> A：是的，就连`nvm`官方都没有办法解决。
 
 ## 使用
 
