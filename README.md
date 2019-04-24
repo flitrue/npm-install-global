@@ -28,9 +28,9 @@ bash index.sh
 
 ## TODO
 
- [] 每次全局安装一个模块时，同步到`data.json`中
- [] 可以注册一个全局使用的命令，实现上一个任务
+- [] 每次全局安装一个模块时，同步到`data.json`中  
+- [] 可以注册一个全局使用的命令，实现上一个任务
 
 ## 最后
 
-这次本人想到的思路，如果有更好的思路欢迎[issue]()
+这次本人想到的思路，如果有更好的思路欢迎[issues](https://github.com/flitrue/npm-install-global/issues)
