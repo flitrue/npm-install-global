@@ -14,8 +14,8 @@
 nvm is not compatible with the npm config "prefix" option...
 ```
 
-Q：难道没有其他办法了吗？
-A：是的，就连`nvm`官方都没有办法
+> Q：难道没有其他办法了吗？ 
+> A：是的，就连`nvm`官方都没有办法  
 
 ## 使用
 
