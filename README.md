@@ -19,18 +19,23 @@ A：是的，就连`nvm`官方都没有办法
 
 ## 使用
 
-将需要全局安装的模块名写到`data.json`中，切换`node`版本时一键安装所有的模块
+将需要全局安装的模块名写到`data.json`中，切换`node`版本后执行以下命令，一键安装所有的模块
 
 ```
 bash index.sh
 ```
 
+## 存在的问题
+
+- 重新安装所有模块至最新版本
+- 安装过的模块会重新安装
+- 升级后的模块可能存在兼容性问题
 
 ## TODO
 
-- [] 每次全局安装一个模块时，同步到`data.json`中  
-- [] 可以注册一个全局使用的命令，实现上一个任务
+- [ ] 每次全局安装一个模块时，可以同步到`data.json`中  
+- [ ] 可以注册一个全局使用的命令，实现上一个任务
 
 ## 最后
 
-这次本人想到的思路，如果有更好的思路欢迎[issues](https://github.com/flitrue/npm-install-global/issues)
+这次本人想到的思路，如果有更好的思路欢迎 [issues](https://github.com/flitrue/npm-install-global/issues)
