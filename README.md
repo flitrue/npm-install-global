@@ -1,6 +1,6 @@
 # npm-install-global
 
-> 根据需要全局安装npm包
+一键安装全局npm模块
 
 ## 简介
 
@@ -24,7 +24,13 @@ nvm is not compatible with the npm config "prefix" option...
 将需要全局安装的模块名写到`data.json`中，切换`node`版本后执行以下命令，一键安装所有的模块
 
 ```
-bash index.sh
+bash init.sh
+```
+
+安装一个新的全局模块时，例如安装`pm2`，可执行：
+
+```
+bash install.sh pm2 # 相当于执行 npm i -g pm2，并将pm2模块写入data.json文件中
 ```
 
 ## 存在的问题
@@ -35,7 +41,7 @@ bash index.sh
 
 ## TODO
 
-- [ ] 每次全局安装一个模块时，可以同步到`data.json`中  
+- [x] 每次全局安装一个模块时，可以同步到`data.json`中  
 - [ ] 可以注册一个全局使用的命令，实现上一个任务
 
 ## 最后

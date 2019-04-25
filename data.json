@@ -1,5 +1,7 @@
 {
-  "modules": [
-    "pm2"
-  ]
+	"modules": [
+		"pm2",
+		"http-server",
+		"hexo-cli"
+	]
 }
