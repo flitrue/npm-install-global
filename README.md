@@ -1,4 +1,4 @@
-# npm-install-global
+# npm-install-global (该仓库不再更新，请移步到[npm-install-global](https://github.com/W-FE/npm-install-global))
 
 一键安装全局npm模块
 
